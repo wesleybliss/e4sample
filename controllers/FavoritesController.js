@@ -2,15 +2,20 @@
 module.exports = function() {
     
     // Private scope
-    // ...
+    var model = new require('../models/FavoriteModel')();
     
     // Public scope
     return {
         
         list: function( req, res, next ) {
-            res.send({test:'yes'});
-            //res.send([1, 2, 3]);
-            
+            model.find( 'something', function( err, data ) {
+                if ( err ) {
+                    res.send( 400, err );
+                }
+                else {
+                    res.send( data );
+                }
+            });
         }
         
     };
