@@ -1,0 +1,14 @@
+{
+  "name": "e4sample",
+  "version": "0.0.1",
+  "description": "Express.js 4.0 Sample",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.7.2"
+  }
+}
